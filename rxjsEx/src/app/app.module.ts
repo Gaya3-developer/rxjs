@@ -17,6 +17,20 @@ import { PluckComponent } from './observable/pluck/pluck.component';
 import { FilterComponent } from './observable/filter/filter.component';
 import { TapComponent } from './observable/tap/tap.component';
 import { TakeComponent } from './observable/take/take.component';
+import { RetryComponent } from './observable/retry/retry.component';
+import { DebounceComponent } from './observable/debounce/debounce.component';
+import { ConcatMapComponent } from './observable/concat-map/concat-map.component';
+import { SubjectComponent } from './observable/subject/subject.component';
+import { ReplayComponent } from './observable/replay/replay.component';
+import { AsyncSubjectComponent } from './observable/async-subject/async-subject.component';
+import { ConcatMergeComponent } from './observable/concat-merge/concat-merge.component';
+import { MergeMapComponent } from './observable/merge-map/merge-map.component';
+import { SwitchMapComponent } from './observable/switch-map/switch-map.component';
+import { ExhaustMapComponent } from './observable/exhaust-map/exhaust-map.component';
+import { ShareReplayComponent } from './observable/share-replay/share-replay.component';
+import { LatestComponent } from './observable/latest/latest.component';
+import { ZipComponent } from './observable/zip/zip.component';
+import { CatchErrorComponent } from './observable/catch-error/catch-error.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +48,21 @@ import { TakeComponent } from './observable/take/take.component';
     PluckComponent,
     FilterComponent,
     TapComponent,
-    TakeComponent
+    TakeComponent,
+    RetryComponent,
+    DebounceComponent,
+    ConcatMapComponent,
+    SubjectComponent,
+    ReplayComponent,
+    AsyncSubjectComponent,
+    ConcatMergeComponent,
+    MergeMapComponent,
+    SwitchMapComponent,
+    ExhaustMapComponent,
+    ShareReplayComponent,
+    LatestComponent,
+    ZipComponent,
+    CatchErrorComponent
   ],
   imports: [
     BrowserModule,
