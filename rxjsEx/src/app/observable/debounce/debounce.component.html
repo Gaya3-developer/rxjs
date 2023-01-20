@@ -1,1 +1,35 @@
-<p>debounce works!</p>
+<div class="my-3">
+    <h2>Debounce time and distinct until changed</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <strong class="my-5">Ex 1: debouncetime</strong>
+            <hr>
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Search</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="search" #myInput>
+                </div>
+                <p *ngIf="reqData != null">
+                    requested data:<strong class="text-success">
+                        {{reqData}}
+                    </strong>
+                </p>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <strong class="my-5">Ex 2: distinct until changed</strong>
+        <hr>
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Search</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="search" #myInput1>
+            </div>
+            <p *ngIf="resData != null">
+                requested data:<strong class="text-success">
+                    {{resData}}
+                </strong>
+            </p>
+    </div>
+</div>
+    </div>

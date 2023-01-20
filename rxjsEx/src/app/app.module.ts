@@ -31,7 +31,10 @@ import { ShareReplayComponent } from './observable/share-replay/share-replay.com
 import { LatestComponent } from './observable/latest/latest.component';
 import { ZipComponent } from './observable/zip/zip.component';
 import { CatchErrorComponent } from './observable/catch-error/catch-error.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { Comp1Component } from './observable/comp/comp1/comp1.component';
+import { Comp2Component } from './observable/comp/comp2/comp2.component';
+import { Comp3Component } from './observable/comp/comp3/comp3.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,11 +65,16 @@ import { CatchErrorComponent } from './observable/catch-error/catch-error.compon
     ShareReplayComponent,
     LatestComponent,
     ZipComponent,
-    CatchErrorComponent
+    CatchErrorComponent,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component,
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
