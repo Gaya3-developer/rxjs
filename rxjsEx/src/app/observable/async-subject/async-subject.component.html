@@ -1,4 +1,45 @@
-<div class="my-3">
-    <h2>Pluck</h2>
-    <br>
-    </div>
+
+    <div class="my-3">
+        <h2>Async object</h2>
+        <br>
+        <div class="row">
+            <div class="col">
+                <h3>add vedio</h3>
+            </div>
+        
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+              <input type="text" class="form-control" #vedio/>
+            </div>
+            <div class="col-md-3">
+             <button class="btn btn-success" (click)="onAdd(vedio)">
+                add video
+             </button>
+    
+              </div>
+    
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <strong>User 1</strong>
+                <hr>
+                <ul id="elContainer">
+    <li>
+        vedio  : {{asyncVedioemit}}
+    </li>
+                </ul>
+                
+            </div>
+            <div class="col-md-4">
+                <strong>Click to complete</strong>
+                <hr>
+              
+                <button class="btn btn-success" (click)="onComplete()">
+                   complete subscription</button>
+            </div>
+         
+        </div>
+        </div>

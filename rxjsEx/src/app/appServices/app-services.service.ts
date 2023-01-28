@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { AsyncSubject } from 'rxjs';
 import { ReplaySubject } from 'rxjs';
 import { BehaviorSubject } from 'rxjs';
 import { Subject } from 'rxjs';
@@ -11,6 +12,7 @@ export class AppServicesService {
   //userName = new Subject<string>()
   userName = new BehaviorSubject<string>('anup')
   vedioemit =new ReplaySubject<string>(3)
+  asyncVedioemit =new AsyncSubject<string>()
   constructor() { }
   print(val:string, containerId:string){
     let li = document.createElement('li')
